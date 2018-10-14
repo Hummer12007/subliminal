@@ -135,7 +135,7 @@ class OpenSubtitlesProvider(Provider):
     def initialize(self):
         logger.info('Logging in')
         response = checked(self.server.LogIn(self.username, self.password, 'eng',
-                                             'subliminal v%s' % __short_version__))
+                                             'Grabber v1'))
         self.token = response['token']
         logger.debug('Logged in with token %r', self.token)
 
